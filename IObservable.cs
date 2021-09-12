@@ -2,9 +2,9 @@
 namespace BanditoGansterito
 {
     public interface IObservable
-    {
-		void RegisterObserver(IObserver o);
-		void RemoveObserver(IObserver o);
-		void NotifyObservers();
+    {           
+		void RegisterObserver(IObserver o);//Регистрировать наблюдателей
+		void RemoveObserver(IObserver o);//Удалить наблюдателей
+		void NotifyObservers();//Оповестить наблюдателей
     }
 }
